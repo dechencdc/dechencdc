@@ -607,9 +607,10 @@ body {
         padding: 1.5rem;
     }
     .logo-img {
-    height: 30px; /* Match this to your navbar's height */
+    height: 40px; /* Match this to your navbar's height */
     width: auto;  /* Maintains aspect ratio */
-    margin-right: 8px;
+    max-width: 150px;
+    object-fit: contain;
     }
     
 }
