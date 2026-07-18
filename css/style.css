@@ -606,11 +606,11 @@ body {
     .contact-form {
         padding: 1.5rem;
     }
+    @media (max-width: 600px) {
     .logo-img {
-    height: 40px; /* Match this to your navbar's height */
-    width: auto;  /* Maintains aspect ratio */
-    max-width: 150px;
-    object-fit: contain;
+        height: 40px;
+        max-width: 150px;
     }
+}
     
 }
