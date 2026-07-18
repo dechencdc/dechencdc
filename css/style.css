@@ -606,4 +606,10 @@ body {
     .contact-form {
         padding: 1.5rem;
     }
+    .logo-img {
+    height: 30px; /* Match this to your navbar's height */
+    width: auto;  /* Maintains aspect ratio */
+    margin-right: 8px;
+    }
+    
 }
