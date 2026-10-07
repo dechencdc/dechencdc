@@ -11,34 +11,39 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">
                 <img src="dechen.png" alt="Dechen Logo" class="logo-img">
                 <span>Dechen</span>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-navigation">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#team" class="nav-link">Team</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
+            <p class="eyebrow">Dechen Child &amp; Adults Rehabilitation Centre</p>
             <h1>Dechen Rehabilitation Centre</h1>
             <p>Comprehensive Care for Children & Adults</p>
             <p class="subtitle">Professional therapeutic and rehabilitation services with compassionate expert care</p>
-            <a href="#contact" class="cta-button">Get Started Today</a>
+            <p class="availability-note"><i class="fas fa-clock" aria-hidden="true"></i> Available 24/7 by mobile</p>
+            <div class="hero-actions">
+                <a href="#contact" class="cta-button">Get in touch</a>
+                <a href="tel:9441012021" class="hero-phone"><i class="fas fa-phone" aria-hidden="true"></i> Call +91 94410 12021</a>
+            </div>
         </div>
         <div class="hero-overlay"></div>
     </section>
@@ -81,78 +86,105 @@
             <!-- Child Services -->
             <div class="service-category">
                 <h3><i class="fas fa-children"></i> Child Services</h3>
+                <p class="service-category-intro">Choose a service to explore what it may include.</p>
                 
                 <div class="services-grid">
                     <div class="service-card">
                         <i class="fas fa-star"></i>
                         <h4>Early Interventions</h4>
                         <p>Specialized programs for early developmental support and intervention</p>
+                        <button class="service-details-button" type="button" data-child-service="early-interventions" aria-label="More about Early Interventions">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-microphone"></i>
                         <h4>Speech Therapy</h4>
                         <p>Professional speech and language therapy for communication disorders</p>
+                        <button class="service-details-button" type="button" data-child-service="speech-therapy" aria-label="More about Speech Therapy">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-hand-fist"></i>
                         <h4>Occupational Therapy</h4>
                         <p>Developing life skills and functional independence</p>
+                        <button class="service-details-button" type="button" data-child-service="occupational-therapy" aria-label="More about Occupational Therapy">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-brain"></i>
                         <h4>Behavioral Therapy</h4>
                         <p>Evidence-based behavioral intervention and modification programs</p>
+                        <button class="service-details-button" type="button" data-child-service="behavioral-therapy" aria-label="More about Behavioral Therapy">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-book"></i>
                         <h4>Learning Disability Support</h4>
                         <p>Specialized intervention for dyslexia, dysgraphia, and dyscalculia</p>
+                        <button class="service-details-button" type="button" data-child-service="learning-support" aria-label="More about Learning Disability Support">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-wave-square"></i>
                         <h4>Sensory Integration Therapy</h4>
                         <p>Therapeutic techniques for sensory processing challenges</p>
+                        <button class="service-details-button" type="button" data-child-service="sensory-integration" aria-label="More about Sensory Integration Therapy">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-child"></i>
                         <h4>Pediatric Physiotherapy</h4>
                         <p>Physical rehabilitation and motor development for children</p>
+                        <button class="service-details-button" type="button" data-child-service="pediatric-physiotherapy" aria-label="More about Pediatric Physiotherapy">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-stethoscope"></i>
                         <h4>Developmental Assessments</h4>
                         <p>Comprehensive evaluations using standardized assessment tools (VSMS, DST, DDST, GDS)</p>
+                        <button class="service-details-button" type="button" data-child-service="developmental-assessments" aria-label="More about Developmental Assessments">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-puzzle-piece"></i>
                         <h4>IQ Assessments</h4>
                         <p>Standardized intelligence testing and cognitive evaluation</p>
+                        <button class="service-details-button" type="button" data-child-service="iq-assessments" aria-label="More about IQ Assessments">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-lightbulb"></i>
                         <h4>CBT & ABA Therapy</h4>
                         <p>Evidence-based cognitive and applied behavioral analysis therapies</p>
+                        <button class="service-details-button" type="button" data-child-service="cbt-aba-therapy" aria-label="More about CBT and ABA Therapy">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-clipboard-check"></i>
                         <h4>Screening Assessments</h4>
                         <p>Autism, ADHD, and developmental disorder screening</p>
+                        <button class="service-details-button" type="button" data-child-service="screening-assessments" aria-label="More about Screening Assessments">Learn more</button>
                     </div>
 
                     <div class="service-card">
                         <i class="fas fa-heart-pulse"></i>
                         <h4>Emotional & Behavioral Assessments</h4>
                         <p>Comprehensive evaluation of emotional and behavioral health</p>
+                        <button class="service-details-button" type="button" data-child-service="emotional-behavioral-assessments" aria-label="More about Emotional and Behavioral Assessments">Learn more</button>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fas fa-school"></i>
+                        <h4>NIOS School</h4>
+                        <p>To facilitate educational opportunities through NIOS or other appropriately recognised educational pathways for learners who require flexible or alternative schooling arrangements.</p>
+                        <button class="service-details-button" type="button" data-child-service="nios-school" aria-label="More about NIOS School">Learn more</button>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fas fa-person-running"></i>
+                        <h4>Inclusive Sports &amp; Recreation</h4>
+                        <p>To promote adaptive and inclusive sports, physical education, yoga, meditation, music and recreational activities.</p>
+                        <button class="service-details-button" type="button" data-child-service="inclusive-sports-recreation" aria-label="More about Inclusive Sports and Recreation">Learn more</button>
                     </div>
                 </div>
             </div>
@@ -172,6 +204,7 @@
                         <i class="fas fa-microscope"></i>
                         <h4>Neuropsychological Assessments</h4>
                         <p>Advanced cognitive and neuropsychological testing including dementia screening</p>
+                        <button class="service-details-button" type="button" data-adult-service="neuropsychological-assessments" aria-label="More about Neuropsychological Assessments">Learn more</button>
                     </div>
 
                     <div class="service-card">
@@ -328,16 +361,20 @@
 
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <label class="visually-hidden" for="contact-name">Your name</label>
+                        <input id="contact-name" name="name" type="text" placeholder="Your Name" autocomplete="name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <label class="visually-hidden" for="contact-email">Your email</label>
+                        <input id="contact-email" name="email" type="email" placeholder="Your Email" autocomplete="email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Phone Number" required>
+                        <label class="visually-hidden" for="contact-phone">Phone number</label>
+                        <input id="contact-phone" name="phone" type="tel" placeholder="Phone Number" autocomplete="tel" required>
                     </div>
                     <div class="form-group">
-                        <select required>
+                        <label class="visually-hidden" for="contact-service">Service interest</label>
+                        <select id="contact-service" name="service" required>
                             <option value="">Select Service Interest</option>
                             <option value="child-services">Child Services</option>
                             <option value="adult-services">Adult Services</option>
@@ -347,7 +384,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <label class="visually-hidden" for="contact-message">Your message</label>
+                        <textarea id="contact-message" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
@@ -383,6 +421,15 @@
             </div>
         </div>
     </footer>
+
+    <dialog class="service-dialog" aria-labelledby="service-dialog-title">
+        <div class="service-dialog-header">
+            <h2 id="service-dialog-title"></h2>
+            <button class="service-dialog-close" type="button" aria-label="Close service details">&times;</button>
+        </div>
+        <div class="service-dialog-body"></div>
+        <a class="service-dialog-contact" href="#contact">Ask us about this service</a>
+    </dialog>
 
     <script src="js/script.js"></script>
 </body>
