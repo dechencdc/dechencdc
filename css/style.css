@@ -156,12 +156,12 @@ textarea:focus-visible {
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .hero h1 {
-    font-size: clamp(2.35rem, 5.6vw, 4.1rem);
+    font-size: clamp(2rem, 4.5vw, 3.75rem);
     line-height: 1.12;
     margin-bottom: 1.25rem;
     font-weight: 700;
