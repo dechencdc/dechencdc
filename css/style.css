@@ -708,6 +708,17 @@ textarea:focus-visible {
     color: var(--secondary-color);
 }
 
+.footer-youtube-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    min-height: 40px;
+}
+
+.footer-youtube-link i {
+    font-size: 1.2rem;
+}
+
 .footer-section p {
     color: #bdc3c7;
     line-height: 1.8;
