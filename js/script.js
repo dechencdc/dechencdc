@@ -98,6 +98,12 @@ const childServiceDetails = {
         examples: ['Exploring flexible or alternative schooling pathways', 'Discussing educational options suited to the learner'],
         image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=80'
     },
+    'special-school': {
+        description: 'Special school offers an individualised educational setting for learners who benefit from additional learning support. Teaching is adapted to each learner’s strengths, needs and pace, with a focus on building confidence, participation and practical skills.',
+        examples: ['Structured, individualised learning activities', 'Support for communication, independence and participation'],
+        image: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=80',
+        note: 'School hours: 10:00 AM–3:00 PM. The learning approach and support plan are discussed with each learner and family.'
+    },
     'inclusive-sports-recreation': {
         description: 'To promote adaptive and inclusive sports, physical education, yoga, meditation, music and recreational activities.',
         examples: ['Adaptive sports and inclusive physical education', 'Yoga, meditation, music and recreational activities'],
